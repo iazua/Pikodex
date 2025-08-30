@@ -8,14 +8,7 @@ android {
     namespace = "com.example.pikodex"
     compileSdk = 36
 
-
-    buildFeatures {
-        buildConfig = true
-    }
-    #### **1.3. Set API Key Securely**
-
-    1.  Open `local.properties`
-            defaultConfig {
+    defaultConfig {
         applicationId = "com.example.pikodex"
         minSdk = 24
         targetSdk = 36
@@ -30,7 +23,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -43,11 +36,11 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

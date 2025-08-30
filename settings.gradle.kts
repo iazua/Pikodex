@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Pikodex"
 include(":app")
+include(":core:network")
