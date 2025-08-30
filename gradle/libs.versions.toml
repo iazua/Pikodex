@@ -14,8 +14,8 @@ cameraLifecycle = "1.2.2"
 cameraView = "1.2.2"
 cameraExtensions = "1.2.2"
 kotlinxCoroutinesAndroid = "1.7.3"
-retrofit = "3.0.0"
-converterMoshi = "3.0.0"
+retrofit = "2.11.0"
+converterMoshi = "2.11.0"
 moshiKotlin = "1.15.2"
 lifecycleViewmodelCompose = "2.7.0"
 loggingInterceptor = "4.12.0"
@@ -45,10 +45,9 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "converterMoshi" }
 moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshiKotlin" }
 androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
-logging-interceptor = { group = "(", name = "logging-interceptor", version.ref = "loggingInterceptor" }
+logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
